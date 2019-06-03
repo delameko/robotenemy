@@ -3,9 +3,9 @@
 - name: deploy | prerequisites
   hosts: appservers
   become: yes
-  become_user: robotenemy
+  become_user: stubgun
   vars:
-    site_dir: /home/robotenemy/www/robotenemy.com
+    site_dir: /home/stubgun/www/robotenemy.com
   tasks:
     - name: create site folder (if needed)
       file:
